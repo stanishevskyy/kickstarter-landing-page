@@ -1,3 +1,26 @@
-body {
-  margin: 0;
-}
+@import './blocks/page/page';
+@import './utils/mixins';
+@import './utils/vars';
+@import './utils/fonts';
+@import './utils/reset';
+@import './blocks/header/header';
+@import './blocks/header/header-top';
+@import './blocks/header/header-middle';
+@import './blocks/aside/menu';
+@import './blocks/aside/menu-top';
+@import './blocks/aside/menu-lists';
+@import './blocks/aside/menu__items-wrapper';
+@import './blocks/aside/menu-btn';
+@import './blocks/main-content/main-content';
+@import './blocks/main-content/navigation';
+@import './blocks/main-content/benefits';
+@import './blocks/main-content/picture';
+@import './blocks/main-content/designed';
+@import './blocks/main-content/luna-eye';
+@import './blocks/main-content/response';
+@import './blocks/main-content/features';
+@import './blocks/main-content/features-card';
+@import './blocks/main-content/features-slider';
+@import './blocks/main-content/question';
+@import './blocks/footer/footer';
+

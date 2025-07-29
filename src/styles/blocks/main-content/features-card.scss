@@ -1,0 +1,48 @@
+.features {
+  &__card {
+    display: none;
+
+    @include on-desktop {
+      display: block;
+    }
+  }
+
+  &__card.active {
+    display: block;
+  }
+
+  &__card-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: $color-special;
+
+    @include on-desktop {
+      font-size: 34px;
+      line-height: 42px;
+    }
+  }
+
+  &__card-info {
+    margin-top: 20px;
+
+    @include on-desktop {
+      margin-top: 30px;
+    }
+  }
+
+  &__card-item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: $color-text-primary;
+
+    margin-top: 10px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}

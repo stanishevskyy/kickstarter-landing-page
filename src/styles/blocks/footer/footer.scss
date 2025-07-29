@@ -1,0 +1,136 @@
+.footer {
+  &__container {
+    @include content-padding;
+  }
+
+  &__content {
+    @include page-grid;
+  }
+
+  &__link {
+    display: none;
+
+    @include hover(transform, scale(1.05));
+
+    @include on-tablet {
+      display: block;
+
+      grid-row: 1/2;
+      grid-column: 1/-1;
+
+      justify-self: center;
+    }
+  }
+
+  &__link-logo {
+    width: 184px;
+    height: 25px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+
+    grid-column: 2/4;
+
+    @include on-tablet {
+      grid-column: 4/6;
+
+      margin-top: 60px;
+    }
+
+    @include on-desktop {
+      grid-column: 5/9;
+    }
+  }
+
+  &__socials-facebook {
+    height: 24px;
+    width: 24px;
+    background-image: url('../assets/icons/socials-icons/facebook.svg');
+
+    @include hover(transform, scale(1.05));
+  }
+
+  &__socials-twitter {
+    height: 24px;
+    width: 24px;
+    background-image: url('../assets/icons/socials-icons/twitter.svg');
+
+    @include hover(transform, scale(1.05));
+  }
+
+  &__socials-instagram {
+    height: 24px;
+    width: 24px;
+    background-image: url('../assets/icons/socials-icons/instagram.svg');
+
+    @include hover(transform, scale(1.05));
+  }
+
+  &__socials-margin {
+    margin-right: 40px;
+
+    @include on-tablet {
+      margin-right: 50px;
+    }
+
+    @include on-desktop {
+      margin-right: 40px;
+    }
+  }
+
+  &__socials-margin:last-of-type {
+    margin-right: 0;
+  }
+
+  &__terms {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #bdbdbd;
+
+    grid-column: 1/-1;
+
+    justify-self: center;
+
+    margin-top: 30px;
+
+    padding-bottom: 20px;
+
+    @include on-tablet {
+      margin-top: 60px;
+    }
+  }
+
+  &__arrow {
+    display: none;
+
+    @include on-tablet {
+      display: block;
+
+      justify-self: end;
+
+      grid-row: 1/2;
+      grid-column: 8/-1;
+    }
+
+    @include on-desktop {
+      grid-column: 12/-1;
+    }
+
+    @include hover(transform, scale(1.05));
+  }
+
+  &__arrow-link {
+    display: block;
+
+    width: 50px;
+    height: 50px;
+
+    background-repeat: no-repeat;
+    background-image: url('../assets/icons/footer-icons/footer-arrow.svg');
+  }
+}

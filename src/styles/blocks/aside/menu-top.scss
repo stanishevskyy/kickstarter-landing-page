@@ -1,0 +1,43 @@
+.menu {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-block: 25px;
+
+    @include on-tablet {
+      padding-block: 40px;
+    }
+  }
+
+  &__top-link {
+    cursor: pointer;
+
+    padding-block: 12px;
+
+    @include hover(transform, scale(1.05));
+
+    &-link-logo {
+      width: 161px;
+      height: 25px;
+    }
+  }
+
+  &__top-close {
+    cursor: pointer;
+
+    width: 24px;
+    height: 24px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/icons/header-icons/Icon-Close.svg');
+  }
+
+  &__top-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
